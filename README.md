@@ -2,4 +2,4 @@
 This repository represents my own token "Gas Token" as a as a continuation of the project "Gas Promotion Smart Contract"
 
 
-# ...IN PROGRESS...
+# ...IN PROGRESS... Will be updated soon...:)
