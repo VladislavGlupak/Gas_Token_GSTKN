@@ -1,4 +1,10 @@
-// SPDX-License-Identifier: UNLICENSED
+// SPDX-License-Identifier: MIT
 pragma solidity ^0.8.7;
 
-contract Lock {}
+import "@openzeppelin/contracts/token/ERC20/ERC20.sol";
+
+contract GasToken is ERC20 {
+    constructor(uint256 initialSupply) ERC20("GasToken", "GSTKN") {
+        _mint(msg.sender, initialSupply);
+    }
+}
