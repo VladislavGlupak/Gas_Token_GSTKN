@@ -1,5 +1,5 @@
 # Gas_Token_Smart_contract_GSTKN
-This repository represents my own token "Gas Token" as a as a continuation of the project "Gas Promotion Smart Contract"
 
+This project repository represents a pay-to-earn promotion where a gas station owner can offer their customers rewards through gasoline purchases. The administrator manages the promotion and the customer decides how to use their rewards.
 
 # ...IN PROGRESS... Will be updated soon...:)
