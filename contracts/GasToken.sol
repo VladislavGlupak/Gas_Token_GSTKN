@@ -7,9 +7,17 @@ import "@openzeppelin/contracts/access/Ownable.sol";
 contract MyToken is ERC20, Ownable {
     uint256 constant initialSupply = 1000000000;
     uint256 constant maxSupply = 1000000000000;
+    bool public promoStopped = false;
+
+    mapping(address => uint256) public accounts;
 
     constructor() ERC20("GasToken", "GSTKN") {
         _mint(msg.sender, initialSupply * 10**decimals());
+    }
+
+    modifier notStopped() {
+        require(promoStopped == false, "Promotion is stopped!");
+        _;
     }
 
     function mint(address to, uint256 amount) public onlyOwner {
@@ -23,4 +31,12 @@ contract MyToken is ERC20, Ownable {
     function buyGas() public {}
 
     function exchangeTokens() public {}
+
+    function stopPromotion() public {
+        promoStopped = true;
+    }
+
+    receive() external payable {}
+
+    fallback() external payable {}
 }
