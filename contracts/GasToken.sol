@@ -28,9 +28,9 @@ contract MyToken is ERC20, Ownable {
         _mint(to, amount);
     }
 
-    function buyGas() public {}
+    function buyGas() public notStopped {}
 
-    function exchangeTokens() public {}
+    function exchangeTokens() public notStopped {}
 
     function stopPromotion() public {
         promoStopped = true;
