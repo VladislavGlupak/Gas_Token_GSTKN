@@ -6,4 +6,4 @@ This project repository represents a pay-to-earn promotion where a gas station o
 
 ---
 
-# ...IN PROGRESS... Will be updated soon...:)
+# ...IN PROGRESS... Will be updated soon... :)
